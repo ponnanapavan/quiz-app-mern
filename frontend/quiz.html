@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <style>
+        .quizcontainer{
+           width: 100%;
+           height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        #scoreDisplay {
+            position: fixed; 
+            top: 20px; 
+            right: 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            transition: transform 0.3s ease;
+            background-color: black;
+            cursor: pointer;
+            color:white;
+          }
+          
+          #scoreDisplay:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to bottom right, #333399, #FF00CC);
+            color: black;
+            font-weight: bold;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="quizcontainer">
+        <div>
+            <h1 class="heading">Technical Quiz</h1>
+            <form id="quizdataForm">
+                <!-- Add your questions here -->
+               
+                <!-- Repeat the above structure for each question -->
+            </form>
+        </div>
+    
+        <div id="scoreDisplay" class="quiz_score"></div> 
+    </div>
+    
+    <script src="quiz.js"></script>
+    
+   
+</html>
